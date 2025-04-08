@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    color: #333;
+  }
+
+  /* Botón hamburguesa */
+#menuToggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+  }
+  
+  #hamburger {
+    font-size: 28px;
+    padding: 10px 14px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  #hamburger:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Menú lateral */
+  #sideMenu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 280px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 2rem 1rem;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.2);
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    z-index: 9998;
+    transition: right 0.4s ease;
+  }
+  
+  #sideMenu ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+  }
+  
+  #sideMenu ul li {
+    margin: 1rem 0;
+  }
+  
+  #sideMenu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  
+  #closeMenu {
+    font-size: 26px;
+    cursor: pointer;
+    position: relative;
+    
+    color: white;
+  }
+  
+  /* Mostrar el menú */
+  #sideMenu.open {
+    right: 0;
+  }
+  
+  
+  #slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: none;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+
+  /* #slider{
+    width: 100%;
+    height: 300px;
+    background: url('https://wonbet.vip/images/banner/Slide1.jpg?v=1742575724') no-repeat center center/cover;
+  } */
+
+  #servicios {
+    padding: 2rem;
+    text-align: center;
+    background: #fff;
+  }
+  
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+  
+  .card {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 12px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 8px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .card h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  
+  header {
+    background: #4CAF50;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  #formulario {
+    padding: 2rem;
+    background: white;
+    margin: 2rem auto;
+    max-width: 500px;
+    border-radius: 10px;
+  }
+  
+  form input, form textarea, form button {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  #whatsappBtn {
+    display: block;
+    background: #25D366;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    border-radius: 50px;
+  }
